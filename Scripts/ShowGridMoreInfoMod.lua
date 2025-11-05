@@ -66,7 +66,7 @@ function ShowGridMoreInfoMod:ShowGridInfo()
  
 	local strLingAddion = ""
 	if fLingAddion == 0 then
-		strLingAddion = "None"
+		strLingAddion = "ไม่มี"
 	elseif fToMaxLingAddionTime == 0 then
 		strLingAddion = string.format("%.2f[color=#00FF00](Max)[/color]", fLingAddionInFact)
 	else
@@ -76,7 +76,7 @@ function ShowGridMoreInfoMod:ShowGridInfo()
 	if CS.Wnd_GameMain.Instance.openFengshui then
 		local EArray = Map:GetElement(nCurMouseKey)
 		local EPArray = Map:GetElementProportion(nCurMouseKey)
-		CS.Wnd_GameMain.Instance.UIInfo.m_n32.text = string.format("พลังปราณ:%.2f\nรวบรวมพลังปราณ:%s\n[color=#FFEB68]เหล็ก  %05.2f  %02.0f%%[/color]\n[color=#78C84E]ไม้  %05.2f  %02.0f%%[/color]\n[color=#81C1F5]น้ำ  %05.2f  %02.0f%%[/color]\n[color=#DA494E]ไฟ  %05.2f  %02.0f%%[/color]\n[color=#986B39]ดิน  %05.2f  %02.0f%%[/color]",
+		CS.Wnd_GameMain.Instance.UIInfo.m_n32.text = string.format("พลังปราณ:%.2f\nรวมพลังปราณ:%s\n[color=#FFEB68]เหล็ก  %05.2f  %02.0f%%[/color]\n[color=#78C84E]ไม้  %05.2f  %02.0f%%[/color]\n[color=#81C1F5]น้ำ  %05.2f  %02.0f%%[/color]\n[color=#DA494E]ไฟ  %05.2f  %02.0f%%[/color]\n[color=#986B39]ดิน  %05.2f  %02.0f%%[/color]",
 				fLing,
 				strLingAddion,
 				EArray[1], EPArray[1] * 100,
@@ -182,3 +182,4 @@ end
 function ShowGridMoreInfoMod:BindFertilityColor(strFertility)
 	return string.format("[coolor=#%s]%s[color]", self.tbFertilityColor[strFertility], strFertility)
 end
+
