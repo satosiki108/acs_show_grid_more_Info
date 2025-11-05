@@ -119,7 +119,7 @@ function ShowGridMoreInfoMod:ShowGridInfo()
 	end
  
 	-- {0}{8}{6}\n{1}\n{2}\n{4}\n{3}{5}({7:f1}℃)
-	CS.Wnd_GameMain.Instance.UIInfo.m_n32.text = string.format("พลังปราณ:%.2f\nรวบรวมพลังปราณ:%s\n%s%s%s(%d, %d)\n%s[color=%s](%.2f)[/color]\n%s(%.2f)\n%s(%.2f)\n%s%s(%.1f℃)",
+	CS.Wnd_GameMain.Instance.UIInfo.m_n32.text = string.format("พลังปราณ:%.2f\nรวมพลังปราณ:%s\n%s%s%s(%d, %d)\n%s[color=%s](%.2f)[/color]\n%s(%.2f)\n%s(%.2f)\n%s%s(%.1f℃)",
 			fLing,
 			strLingAddion,
 			strMsg0, strMsg8, strMsg6, nX, nY,
